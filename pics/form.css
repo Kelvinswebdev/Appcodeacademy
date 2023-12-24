@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(to left,purple,rgb(71, 1, 71));
+    height: 100vh;
+
+    
+}
+
+.container{
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url("pics/dog.jpg");
+    background-size: cover;
+
+    /* background-color: white; */
+    max-width: 800px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+p{
+    font-size: 16px;
+    padding: 10px 0px;
+    color: purple;
+}
+
+h1{
+    font-size: 16px;
+    padding: 10px 0px;
+    color: blueviolet;
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 16px;
+    padding: 10px 0px;
+    color: blueviolet;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: 1px solid rgb(73, 73, 73);
+    border-radius: 4px;
+    margin-top: 10px;
+    background:transparent;
+    color: white;
+}
+
+label{
+    padding: 10px 0px;
+    color: blueviolet;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    color: white;
+}
