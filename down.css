@@ -237,18 +237,18 @@ width: 700px;
 
 /* the styling for the main content begins here */
 
-/* .download{
+.download{
   padding: 50px;
   display: flex;
   align-items: center;
   height: 600px;
-  background-image: url("pics/db.jpg");
+  background-image: url("pics/slider3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   background-color: #010623;
 
-} */
+}
 
 @media screen and (max-width:600px) {
   .files{
