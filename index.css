@@ -2,8 +2,11 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: normal;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
 }
 span{
   padding: 0;
