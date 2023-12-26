@@ -534,81 +534,103 @@ display: none;
 
 
 
-  <div class="stage5">
-    <div class="stage5-content">
-    <div class="stage5con">
-     <ul>
-      <h1>Academy</h1>
-      <li><a href="about.html">Appcode mission</a></li>
-      <li><a href="about.html">Our Vision and Aspirations</a></li>
-      <li><a href="about.html">Our Values</a></li>
+  .stage5{
+    background-color: #111111;
+    /* font-weight: lighter; */
+    
+  }
+  
+  .stage5-content{
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 100px 0px 70px 0px;
+    color: white;
+  }
+  
+  .stage5con{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap:50px;
+    grid-column-gap:50px;
+    margin: 0px auto;
+    max-width: 1100px;
+    justify-content:center;
+  
+  }
+  
+  @media screen and (max-width:992px){ 
+  .stage5con{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 70px;
+    padding: 30px;
+  }
+  }
+  
+  @media screen and (max-width:700px){ 
+    .stage5con{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 100px;
+      padding: 0px 30px;
+      gap: 30px;
+      justify-content: center;
+    }
+    }
+  
+  .stage5con h1{
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+  }
+  
+  .stage5con ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    width: 200px;
+  }
 
-    </ul>
+  @media screen and (max-width:700px){ 
+    .stage5con ul{
+      width: 150px;
+    }
+    }
+  
+  .stage5con ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .stage5con input{
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+  
+  }
+  
+  .stage5con button{
+    background-color: #da5800;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+  }
 
-      <ul>
-        <h1>Courses</h1>
-        <li><a href="sof.html">Software Engineering</a></li>
-        <li><a href="cyber.html">Cyber Security</a></li>
-        <li><a href="data.html">Data Analytics</a></li>
-        <li><a href="cloud.html">Cloud Engineering</a></li>
-        <li><a href="digi.html">Digital Marketing</a></li>
-      </ul>
+  .social{
+    width: 150px;
+    font-size: 13px;
+  }
+  
+  .social img{
+    width: 30px;
+    padding-top: 10px;
+  }
+  
+  .social ul{
+    display: flex;
+  }
 
-      <ul>
-        <h1>New Here</h1>
-        <li><a href="about.html">Find out more</a></li>
-        <li><a href="learn.html">Student Learing Goals</a></li>
-        <li><a href="cloud.html">Main Courses/Programs</a></li>
-        <li><a href="news.html">Blog/News</a></li>
-
-      </ul>
-
-      <div class="social">
-        <h1>Find Out More</h1>
-        <input type="text">
-        <button>signup</button>
-
-        <ul>
-          <li><a href=""><img src="pics/twitter.png" alt=""></a></li>
-        <li><a href=""><img src="pics/instagram.png" alt=""></a></li>
-        <li><a href=""><img src="pics/linked.png" alt=""></a></li>
-        <li><a href=""><img src="pics/face.png" alt=""></a></li>
-        <li><a href=""><img src="pics/youtube.png" alt=""></a></li>
-        </ul>
-        
-      </div>
-
-
-
-      <ul>
-        <h1>Street Address</h1>
-        <div>Gbawe-Accra.</div>
-        <div>No 2 first atoom Kojo str</div>
-      </ul>
-
-      <ul>
-        <h1>Postal Address</h1>
-        <div>P.O. BOX 5100</div>
-        <div>Accra-North.</div>
-      </ul>
-
-      <ul>
-        <h1>Phone & Email</h1>
-        <div> +233 598044825</div>
-        <div>info@appcodeglobal.org</a></div>
-      </ul>
-
-      <div>
-        <h1>Comming Soon</h1>
-        <div>+Appcode Foundation</div>
-        <div>+Dynamic ERP System</div>
-        <div>+Payment Gateway</div>
-      </div>
-
-    </div>
-    <img src="pics/appcode.png" width="300" style="padding: 30px;" alt="">
-  </div>
-</div>
 
 
 
