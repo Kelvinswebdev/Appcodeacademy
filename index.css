@@ -562,7 +562,6 @@ display: none;
   .stage5con{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 70px;
     padding: 30px;
   }
   }
@@ -583,6 +582,12 @@ display: none;
     color: white;
     font-weight: 200;
   }
+
+  @media screen and (max-width:700px){ 
+    .stage5con h1{
+      font-size: 18px;
+    }
+    }
   
   .stage5con ul{
     margin: 0px;
@@ -617,8 +622,8 @@ display: none;
     padding: 5px 10px;
   }
 
-  .social{
-    width: 150px;
+  .social,.street{
+    width: 200px;
     font-size: 13px;
   }
   
@@ -629,9 +634,8 @@ display: none;
   
   .social ul{
     display: flex;
+    gap: 10px;
   }
-
-
 
 
 
