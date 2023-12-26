@@ -482,7 +482,6 @@ padding: 0px;
   .stage5con{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 70px;
     padding: 30px;
   }
   }
@@ -491,9 +490,10 @@ padding: 0px;
     .stage5con{
       display: grid;
       grid-template-columns: auto auto;
-      gap: 70px;
+      gap: 100px;
       padding: 0px 30px;
       gap: 30px;
+      justify-content: center;
     }
     }
   
@@ -502,6 +502,12 @@ padding: 0px;
     color: white;
     font-weight: 200;
   }
+
+  @media screen and (max-width:700px){ 
+    .stage5con h1{
+      font-size: 18px;
+    }
+    }
   
   .stage5con ul{
     margin: 0px;
@@ -509,6 +515,12 @@ padding: 0px;
     padding: 0px;
     width: 200px;
   }
+
+  @media screen and (max-width:700px){ 
+    .stage5con ul{
+      width: 150px;
+    }
+    }
   
   .stage5con ul li a{
     text-decoration: none;
@@ -519,6 +531,7 @@ padding: 0px;
   .stage5con input{
     outline: none;
     padding: 5px 10px;
+    width: 100%;
   
   }
   
@@ -527,6 +540,11 @@ padding: 0px;
     color: white;
     border: none;
     padding: 5px 10px;
+  }
+
+  .social,.street{
+    width: 200px;
+    font-size: 13px;
   }
   
   .social img{
@@ -537,7 +555,6 @@ padding: 0px;
   .social ul{
     display: flex;
   }
-
 
 
 
