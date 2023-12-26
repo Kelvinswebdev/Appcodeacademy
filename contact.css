@@ -400,7 +400,6 @@ font-size: 35px;
   .stage5con{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 70px;
     padding: 30px;
   }
   }
@@ -409,9 +408,10 @@ font-size: 35px;
     .stage5con{
       display: grid;
       grid-template-columns: auto auto;
-      gap: 70px;
+      gap: 100px;
       padding: 0px 30px;
       gap: 30px;
+      justify-content: center;
     }
     }
   
@@ -420,6 +420,12 @@ font-size: 35px;
     color: white;
     font-weight: 200;
   }
+
+  @media screen and (max-width:700px){ 
+    .stage5con h1{
+      font-size: 18px;
+    }
+    }
   
   .stage5con ul{
     margin: 0px;
@@ -427,6 +433,12 @@ font-size: 35px;
     padding: 0px;
     width: 200px;
   }
+
+  @media screen and (max-width:700px){ 
+    .stage5con ul{
+      width: 150px;
+    }
+    }
   
   .stage5con ul li a{
     text-decoration: none;
@@ -437,6 +449,7 @@ font-size: 35px;
   .stage5con input{
     outline: none;
     padding: 5px 10px;
+    width: 100%;
   
   }
   
@@ -445,6 +458,11 @@ font-size: 35px;
     color: white;
     border: none;
     padding: 5px 10px;
+  }
+
+  .social,.street{
+    width: 200px;
+    font-size: 13px;
   }
   
   .social img{
