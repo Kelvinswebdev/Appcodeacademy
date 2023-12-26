@@ -533,7 +533,6 @@ display: none;
 }
 
 
-
   .stage5{
     background-color: #111111;
     /* font-weight: lighter; */
@@ -634,9 +633,7 @@ display: none;
   
   .social ul{
     display: flex;
-    gap: 10px;
   }
-
 
 
 
