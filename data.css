@@ -385,43 +385,13 @@ width: 700px;
 
 
 .stage1{
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  background-color: rgb(255, 125, 49);
-  padding-right: 30px;
-  height: 530px;
+  
 }
 
-@media screen and (max-width:992px){
-  .stage1{
-    flex-direction: column;
-    padding: 0px;
-    height: auto;
-  }
-}
 
-.sleft,.sright{
-  width: 50%;
-}
-
-@media screen and (max-width:992px){
-  .sleft,.sright{
-    width: 100%;
-  }
-
-  .sright{
-    padding: 15px;
-  }
-}
-
-.stage1 h1,p{
-  color: white;
-}
 
 .main{
   background-color: #fcf1e8;
-
 }
 
 .main-content{
