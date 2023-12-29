@@ -12,41 +12,30 @@
         <h1>Registeration Form <img src="pics/appcode.png" width="170" alt=""></h1>
         <p>Personal Details</p>
 
-        <form id="paymentForm">
-           
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" />
-            </div>
-             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email-address" placeholder="email" required />
-            </div>
-            <div class="form-group">
-              <label for="amount">Amount</label>
-              <input type="tel" id="amount"  default required />
-  
-            </div>
-            <div class="form-group">
-                <label for="courses">Programme</label>
-                <select name="" id="">
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Software Engineering">Cloud Engineering</option>
-                    <option value="Software Engineering">Cyber Security</option>
-                    <option value="Software Engineering">Data Analytics</option>
-                    <option value="Software Engineering">Digital Marketing</option>
-                </select>
-              </div>
+           <form id="paymentForm">
 
-            <div class="form-submit">
-              <p>Pay GHs200 to pick a form</p>
-              <button type="submit" onclick="payWithPaystack()"> pay </button>
-            </div>
-          </form>
+  <div class="form-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" />
+  </div>
+  <div class="form-group">
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" />
+  </div>
+      <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email-address" required />
+  </div>
+  <div class="form-group">
+    <label for="amount">Amount</label>
+    <input type="tel" id="amount" required />
+  </div>
+  <div class="form-submit">
+    <button type="submit" onclick="payWithPaystack()"> Pay </button>
+  </div>
+</form>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
           
     </div>
 
