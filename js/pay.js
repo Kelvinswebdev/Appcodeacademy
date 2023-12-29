@@ -6,7 +6,7 @@ function payWithPaystack(e) {
 
   let handler = PaystackPop.setup({
     key: 'pk_live_5764b24e00d2d489b3dd51937033f86f4661d7c5', // Replace with your public key
-    email: document.getElementById("email-address").value,
+    email: document.getElementById("email-address").value *100,
     amount: document.getElementById("amount").value,
     currency: 'GHS',
     ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
