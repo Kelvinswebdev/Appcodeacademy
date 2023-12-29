@@ -16,20 +16,18 @@ body{
 }
 
 .container{
-    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url("pics/dog.jpg");
+    /* background-image:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url("pics/dog.jpg"); */
     background-size: cover;
-
-    /* background-color: white; */
-    max-width: 800px;
+    background-color: white;
+    max-width: 400px;
     margin: 100px auto;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 30px;
 }
 
 form{
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+    grid-template-columns: auto;
 }
 p{
     font-size: 16px;
@@ -44,6 +42,10 @@ h1{
     font-weight: lighter;
 }
 
+.container h1 img{
+    float: right;
+}
+
 h2{
     font-size: 16px;
     padding: 10px 0px;
@@ -53,16 +55,16 @@ input{
     width: 100%;
     padding: 10px;
     border: none;
-    outline: 1px solid rgb(73, 73, 73);
-    border-radius: 4px;
+    outline: 1px solid rgb(214, 214, 214);
     margin-top: 10px;
     background:transparent;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 label{
-    padding: 10px 0px;
+    padding:  0px;
     color: blueviolet;
+    margin: 0px;
 }
 
 button{
@@ -71,6 +73,20 @@ button{
     background-color: dodgerblue;
     border: none;
     border-radius: 7px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color: white;
+}
+
+.money{
+    width: 100%;
+    border: 1px solid gray;
+
+}
+
+select{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    outline: 1px solid rgb(202, 202, 202);
 }
