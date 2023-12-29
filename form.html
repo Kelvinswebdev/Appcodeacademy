@@ -8,57 +8,48 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <div class="container">
-        <h1>Registeration Form</h1>
+       <div class="container">
+        <h1>Registeration Form <img src="pics/appcode.png" width="170" alt=""></h1>
         <p>Personal Details</p>
-        <form action="">
-            <div class="column1">
-                <label for="">Firstname</label><br>
-                <input type="text" name="name" placeholder="enter name here" required >
 
-                <br>
-                <br>
-
-                <label for="">Mobile number</label><br>
-                <input type="text" name="number" placeholder="mobile number here" required>
-
-                <br>
-                <br>
-
-
-                <button type="submit">next</button>
+        <form id="paymentForm">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email-address" placeholder="email" required />
             </div>
-
-            <div class="column2">
-                <label for="">Lastname</label><br>
-                <input type="email" name="dateofbirth" placeholder="enter name here" required>
-
-                <br>
-                <br>
-
-                <label for="">Gender</label><br>
-                <input type="text" name="gender"  placeholder="enter name here" required>
-
-
+            <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="tel" id="amount"  default required />
+  
             </div>
-
-            
-            <div class="column3">
-                <label for="">email</label><br>
-                <input type="email"  placeholder="enter name here" required>
-
-                <br>
-                <br>
-
-                <label for="">Occupation</label><br>
-                <input type="text" name="occupation" placeholder="enter name here" required>
-
- 
-
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" />
             </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" />
+            </div>
+            <div class="form-group">
+                <label for="courses">Programme</label>
+                <select name="" id="">
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Software Engineering">Cloud Engineering</option>
+                    <option value="Software Engineering">Cyber Security</option>
+                    <option value="Software Engineering">Data Analytics</option>
+                    <option value="Software Engineering">Digital Marketing</option>
+                </select>
+              </div>
 
-            
-        </form>
+            <div class="form-submit">
+              <p>Pay GHs200 to pick a form</p>
+              <button type="submit" onclick="payWithPaystack()"> pay </button>
+            </div>
+          </form>
+          
     </div>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="js/pay.js"></script>
 </body>
 </html>
