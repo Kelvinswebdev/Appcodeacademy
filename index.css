@@ -4,8 +4,231 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    transition: all 2s ease-in-out;
+}
+
+.overlay-container{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.design1{
+    background-color: #0066ff;
+    position: relative;
+    float: left;
+}
+
+.design1 img{
+    width: 200px;
+    position: absolute;
+    top: -30px;
+    right: -170px;
+    transform: rotate(180deg);
+}
+
+.design2{
+    background-color: #0066ff;
+    position: relative;
+    float: right;
+}
+
+.design2 img{
+    width: 170px;
+    position: absolute;
+    top: -140px;
+    right: -30px;
+}
+
+.Modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    border-radius: 5px;
+    transition: all 2s ease-in-out;
+}
+
+.Modal .close{
+    display: flex;
+    justify-content: right;
+}
+
+.Modal .close span{
+    cursor: pointer;
+}
+
+.Modal .header{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.Modal .header h2{
+    font-size: 25px;
+}
+
+.Modal #signupForm .signup-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 1em;
+}
+
+.Modal #signupForm .signup-container .signup{
+    display: grid;
+    flex: 1 100px;
+    text-align: center;
+}
+
+.Modal #signupForm .signup-container .signup label{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.Modal #signupForm .signup-container .signup input{
+    padding: 7px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 1000ms ease-in-out;
+}
+
+.Modal #signupForm .signup-container .signup input:hover{
+    border-color: #e6835f;
+}
+
+.Modal #signupForm .signup-container .signup select {
+    width: 100%;
+    padding: 7px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 1000ms ease-in-out;
+}
+
+.Modal #signupForm .signup-container .signup select:focus {
+    outline: none;
+}
+
+.Modal #signupForm .signup-container .signup select::-ms-expand {
+    display: none;
+}
+
+.Modal #signupForm .signup-container .signup select:hover {
+    border-color: #e6835f;
+}
+
+.Modal #signupForm .signup-container .signup option {
+    background-color: #fff;
+    color: #333;
+}
+
+.Modal #signupForm .signup-container .signup option:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.Modal #signupForm .button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.Modal #signupForm .button-container button{
+    background-color: #e6835f;
+    padding: 5px 60px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    margin-bottom: 1em;
+}
+
+.Modal #signupForm .text{
+    text-align: center;
+}
+
+@media(max-width: 991px) {
+    .Modal{
+        width: 80%;
+    }
+}
+
+@media(max-width: 767px){
+    .Modal{
+        width: 90%;
+    }
+
+    .Modal #signupForm .signup-container{
+        gap: 20px;
+    }
+}
+
+@media(max-width: 625px){
+    .Modal{
+        margin-top: 7em;
+    }
+    .Modal #signupForm .signup-container{
+        display: block;
+    }
+
+    .Modal #signupForm .signup-container .signup{
+        text-align: left;
+        margin-bottom: 1em;
+    }    
+}
+
+@media(max-width: 480px){
+    .Modal .header,
+    .Modal #signupForm .signup-container .signup label,
+    .Modal #signupForm .signup-container .signup input,
+    .Modal #signupForm .signup-container .signup select,
+    .Modal #signupForm .button-container button,
+    .Modal #signupForm .text{
+        font-size: 13px;
+    }
+
+    .Modal .header h2{
+        font-size: 20px; 
+    }
+
+}
+
 body{
   font-family: 'Quicksand', sans-serif;
+  overflow-y: visible;
 }
 span{
   padding: 0;
