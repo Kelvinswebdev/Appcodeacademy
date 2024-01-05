@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100&display=swap" rel="stylesheet">
-  <title>AppCode Academy</title>
+  <title>Welcome To AppCode Academy</title>
 </head>
 <body>
 
-  <!-- ======= Pop-up Model ======== -->
+       <!-- ======= Pop-up Model ======== -->
      <div class="overlay" id="overlay">
         <div class="overlay-container">
             <div class="Modal" id="modal">
@@ -46,29 +46,16 @@
                         <input type="email" id="email" name="email" placeholder="john@email.com" required>
                     </div>
                     <div class="signup">
-                        <label for="text">Educational Background:</label>
-                        <input type="text" id="education" name="education" placeholder="Tertiary" required>
+                        <label for="text">Interested Course</label>
+                        <input type="text" id="course" name="course" placeholder="Tertiary" required>
                     </div>
                 </div>
-                <div class="signup-container">
-                    <div class="signup">
-                        <label for="name">Are you interested in IT:</label>
-                        <select id="options" name="options">
-                            <option>Select an option</option>
-                            <option>Yes</option>
-                            <option>No</option>
-                            <option>Maybe</option>
-                        </select>
-                    </div>
-                    <div class="signup">
-                        <label for="text">What training are you interested in?</label>
-                        <input type="text" id="course" name="course" placeholder="CCNA" required>
-                    </div>
-                </div>
+
                 <div class="button-container">
                     <button type="submit">Subscribe</button>
                 </div>
                 <div class="text">
+                    <p>Your email is safe with us. We won't spam.</p>
                     <span id="msg"></span>
                 </div>
             </form>
@@ -489,14 +476,18 @@
   <script src="js/main.js"></script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzr-XjRLkhNpbGAtIdwlrZO40W1q4-DDligqJcRdMqMcBM7ynwN_s6vWav3sgx1HtEy/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzUBNk0K4g-J66nUp-T-Zd-J5rjOno6CmXysHOc2IwLXAOE2H-dSuG7GUVJOWmMsgdO/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById('msg')
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML="thank you for subscribing"
+                msg.innerHTML="thank you for subscribing!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
             })
             .catch(error => console.error('Error!', error.message))
         })
