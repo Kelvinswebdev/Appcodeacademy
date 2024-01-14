@@ -11,25 +11,20 @@
   <title>Welcome To AppCode Academy</title>
 </head>
 <body>
-
-       <!-- ======= Pop-up Model ======== -->
+<!-- ======= Pop-up Model ======== -->
      <div class="overlay" id="overlay">
         <div class="overlay-container">
+            <div id="error-message"></div>
             <div class="Modal" id="modal">
                 <div class="design1">
                     <img src="./Orange Gradien.png" alt="">
                 </div>
-                <div class="close">
-                    <span class="material-symbols-outlined" onclick="closeModal()">
-                        close
-                    </span>
-                </div>
                 <div class="header">
-                    <h2 style="color: #e6835f;">AppCode Academy</h2>
+                    <h2 style="color: #e6835f;">AppCode Acadamy</h2>
                     <h2>Newsletter</h2>
                     <p>Sign up to be update with our latest news and products.</p>
                 </div>
-                <form id="signupForm" name="submit-to-google-sheet">
+                <form id="signupForm" name="submit-to-google-sheet" onsubmit="return validate();">
                 <div class="signup-container">
                     <div class="signup">
                         <label for="name">Name:</label>
@@ -46,22 +41,13 @@
                         <input type="email" id="email" name="email" placeholder="john@email.com" required>
                     </div>
                     <div class="signup">
-                        
-                        <label for="course"> Interested Course</label>
-                        <select id="course" name="course">
-                            <option>Software Engineering</option>
-                            <option>Cloud Engineering</option>
-                            <option>Cyber Security</option>
-                            <option>Data Analytics</option>
-                            <option>Digital Marketing</option>
-                            <option>Graphic Design</option>
-                        </select>
-                    
+                        <label for="text">Interested Course</label>
+                        <input type="text" id="course" name="course" placeholder="Tertiary" required>
                     </div>
                 </div>
 
                 <div class="button-container">
-                    <button type="submit">Subscribe</button>
+                    <button type="submit" onclick="validate()">Subscribe</button>
                 </div>
                 <div class="text">
                     <p>Your email is safe with us. We won't spam.</p>
@@ -69,7 +55,7 @@
                 </div>
             </form>
             <div class="design2">
-                <img src="./Orange Gradien.png" alt="">
+                <img src="pics/Orange Gradien.png" alt="">
             </div>
             </div>
         </div>
