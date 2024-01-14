@@ -17,5 +17,26 @@ function closeModal() {
     window.onload = function() {
         setTimeout(openModal, 4000);
     };
+
+function validate(){
+    const Name = document.getElementById("name").value;
+    const Phone = document.getElementById("phone").value;
+    const Course = document.getElementById("course").value;
+    const Email = document.getElementById("email").value;
+    const error = document.getElementById("error-message");
+
+if (!Name || !Phone || !Course || !Email) {
+    error.textContent = 'Please fill out all the required fields.';
+    return;
+} 
+
+// Simple Email Validation
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(Email)) {
+    error.textContent = 'Please enter a valid email address.';
+    return;
+}
+setTimeout(closeModal, 8000);
+}
 // ========== End signup ===========
 
