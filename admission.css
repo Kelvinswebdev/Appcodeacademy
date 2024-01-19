@@ -1,0 +1,448 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  
+  
+  
+  body{
+    font-family: 'Quicksand', sans-serif;
+    overflow-y: visible;
+  }
+  span{
+    padding: 0;
+    margin: 0;
+  }
+  .nav-container{
+    border-bottom: 1px solid #b6dde7;
+    background-color: white;
+  
+  }
+  
+  @media Screen and (max-width:992px) {
+    .nav-container,.nav2container{
+    display: none; 
+    }
+  }
+  
+  #bnav{
+    display: none;
+  }
+  
+  @media Screen and (max-width:992px) {
+   #bnav{
+    display: block;
+   }
+    
+  }
+  
+  .topnav{
+    display: flex;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .topchild{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .topchild img{
+    margin-right: 10px;
+  }
+  
+  .topchild p{
+    margin: 0;
+    color: rgb(114, 114, 114);
+  }
+  .topchild span{
+    color: rgb(196, 196, 196);
+  }
+  
+  /* the styling of the second nav satrts here */
+  
+  .nav2container{
+    font-size: 14px;
+    background-color: rgb(255, 106, 0);
+    padding: 0px;
+    margin: 0px;
+    /* background-color: white; */
+    /* position:sticky; */
+   
+  }
+  .nav2{
+    display: flex;
+    max-width: 1100px;
+    margin: 0px auto;
+    align-items: center;
+    padding: 5px 0px;
+  
+  }
+  
+  .nav2list{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .nav2list li {
+    position: relative;
+  }
+  
+  .nav2list li a{
+    color:rgb(78, 78, 78);
+    text-decoration: none;
+    color: white;
+  padding: 15px;
+  }
+  
+  .drop-container{
+    display: none;
+    box-shadow: 0px 7px 30px -20px;
+  }
+  
+  .dropdowne{
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    top: 35px;
+    list-style-type: none;
+    animation: drop .5s linear ;
+    border-radius: 5px;
+  } 
+  
+  @keyframes drop{
+    0%{
+      margin-top: 30px;
+    }
+    25%{
+      margin-top: 15px;
+    }
+    50%{
+      margin-top: 0px;
+    }
+  }
+  
+  .dropdowne ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .dropdowne li{
+    padding: 0px;
+    width: 200px;
+  }
+  
+  .dropdowne li a{
+    color: black;
+    padding: 10px 15px;
+    display: block;
+  border-bottom: 1px solid #f1f1f1;
+  
+  }
+  
+  .dropdowne li a:hover{
+    background-color: #d2e1f5;
+  }
+  
+  .enroll{
+    margin-left: auto;
+  }
+  
+  .nav2list li:hover .drop-container{
+    display: block;
+  }
+  
+  .about{
+    position: absolute;
+    background-color: white;
+  
+    display: flex;
+    border-top: 2px solid white;
+    border-radius: 10px;
+    top: 33px;
+    animation: drop .5s linear ;
+    display: none;
+    box-shadow: 0px 7px 30px -20px;
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  @keyframes drop{
+    0%{
+      margin-top: 30px;
+    }
+    25%{
+      margin-top: 15px;
+    }
+    50%{
+      margin-top: 0px;
+    }
+  }
+  
+  .about-con{
+    display: flex;
+  }
+  
+  .ab-left{
+    width: 300px;
+    padding: 20px;
+  }
+  
+  
+  .ab-left h1{
+  font-weight: lighter;
+  font-size: 24px;
+  }
+  
+  .pee{
+    color: #c0c0c0;
+    margin-top: 30px;
+  }
+  
+  #learn-more {
+    color:orange ;
+  }
+  
+  .ab-right{
+  width: 700px;
+  }
+  
+  .ab-right img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  
+  .nav2list li:hover .about{
+    display: block;
+  }
+  
+  .enroll button{
+    border: none;
+    padding: 10px 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  .enroll button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  
+  /* the styling for the main content begins here */
+.ruth{
+  height: 700px;
+  background-image: url("pics/ruth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heading{
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  line-height: 1.6;
+}
+.heading h1{
+    font-weight: lighter;
+    color: gray;
+    font-size: 50px;
+}
+
+.tuition{
+  padding-top: 30px;
+}
+
+
+.tuition h1{
+  font-size: 30px;
+}
+
+#tablo{
+  width: 100%;
+  font-size: 20px;
+}
+
+ #row{
+  gap: 50px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  background-color: #e5eff2;
+  padding: 15px 7px;
+}
+
+td{
+  padding: 20px 7px;
+  color: gray;
+  font-weight: lighter;
+}
+
+.pay{
+  margin-top: 20px;
+}
+
+.pay p{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.pay button{
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+
+}
+
+.pay button a{
+  
+  text-decoration: none;
+  color: white ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .stage5{
+    background-color: #111111;
+    /* font-weight: lighter; */
+    
+  }
+  
+  .stage5-content{
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 100px 0px 70px 0px;
+    color: white;
+  }
+  
+  .stage5con{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap:50px;
+    grid-column-gap:50px;
+    margin: 0px auto;
+    max-width: 1100px;
+    justify-content:center;
+  
+  }
+  
+  @media screen and (max-width:992px){ 
+  .stage5con{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+  }
+  }
+  
+  @media screen and (max-width:700px){ 
+    .stage5con{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 100px;
+      padding: 0px 30px;
+      gap: 30px;
+      justify-content: center;
+    }
+    }
+  
+  .stage5con h1{
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+  }
+
+  @media screen and (max-width:700px){ 
+    .stage5con h1{
+      font-size: 18px;
+    }
+    }
+  
+  .stage5con ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    width: 200px;
+  }
+
+  @media screen and (max-width:700px){ 
+    .stage5con ul{
+      width: 150px;
+    }
+    }
+  
+  .stage5con ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .stage5con input{
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+  
+  }
+  
+  .stage5con button{
+    background-color: #da5800;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .social,.street{
+    width: 200px;
+    font-size: 13px;
+  }
+  
+  .social img{
+    width: 30px;
+    padding-top: 10px;
+  }
+  
+  .social ul{
+    display: flex;
+  }

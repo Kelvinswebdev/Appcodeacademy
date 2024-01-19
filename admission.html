@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admission.css">
+  <link rel="stylesheet" href="css/work.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100&display=swap" rel="stylesheet">
+  <title>Admission</title>
+</head>
+<body>
+<!-- ======= Pop-up Model ======== -->
+     <!-- <div class="overlay" id="overlay">
+        <div class="overlay-container">
+            <div id="error-message"></div>
+            <div class="Modal" id="modal">
+                <div class="design1">
+                    <img src="./Orange Gradien.png" alt="">
+                </div>
+                <div class="header">
+                    <h2 style="color: #e6835f;">AppCode Acadamy</h2>
+                    <h2>Newsletter</h2>
+                    <p>Sign up to be update with our latest news and products.</p>
+                </div>
+                <form id="signupForm" name="submit-to-google-sheet" onsubmit="return validate();">
+                <div class="signup-container">
+                    <div class="signup">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="signup">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required>
+                    </div>
+                </div>
+                <div class="signup-container">
+                    <div class="signup">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="john@email.com" required>
+                    </div>
+                    <div class="signup">
+                        <label for="text">Interested Course</label>
+                        <input type="text" id="course" name="course" placeholder="Tertiary" required>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" onclick="validate()">Subscribe</button>
+                </div>
+                <div class="text">
+                    <p>Your email is safe with us. We won't spam.</p>
+                    <span id="msg"></span>
+                </div>
+            </form>
+            <div class="design2">
+                <img src="pics/Orange Gradien.png" alt="">
+            </div>
+            </div>
+        </div>
+        </div> -->
+    <!-- ======= End Pop-up Model ======== -->
+
+    
+
+ <!-- the navigation bar starts here -->
+ <div class="nav-container">
+  <div class="topnav">
+
+      <div><img src="pics/appcode.png" width="200" alt=""></div>
+
+
+    <div class="topchild">
+      <div><img src="pics/time.png" alt="" width="20"></div>
+      <div>
+        <p>Monday-Friday- 08:00-20:00</p>
+        <span>Saturday & Sunday 04:00-08:00</span>
+      </div>
+    </div>
+
+    <div class="topchild">
+      <div><img src="pics/phone.jpg" alt="" width="20"></div>
+      <div>
+        <p>+233 598044825</p>
+        <span>appcodeglobal.org</span>
+      </div>
+    </div>
+
+    <div class="topchild">
+      <div><img src="pics/location.jpg" alt="" width="40"></div>
+      <div>
+        <p> Gbawe-Accra.</p>
+        <span>No 2 first atoom Jojo str</span>
+      </div>
+    </div>
+
+    <div class="topchild">
+      <div><img src="pics/support.png" alt="" width="20"></div>
+      <div>
+        <p>Follow Us</p>
+        <span>appcode.academy on Instagram</span>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- the second nav bar starts here -->
+<div class="nav2container">
+<div class="nav2">
+  <ul class="nav2list">
+    <li><a href="index.html">Home</a>
+    </li>
+    <li><a href="#about.html" onclick="myFunction()">About us</a>
+      <div class="about" id="hide">
+        <div class="about-con">
+          <div class="ab-left">
+            <h1>Welcome To The Appcode Academy</h1>
+            <p class="pee">Everything about us is told through our products and students. Our slogan is "Carry What Matters”, which means that we’re designing products and courses with...  <a href="about.html"  id="learn-more">Click here to learn more</a></p>
+          </div>
+
+          <div class="ab-right">
+            <div><img src="pics/christy.jpg" alt=""><div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!-- <li><a href="">Admission</a>
+      <div class="drop-container">
+        <div class="dropdowne">
+          <ul>
+            <li><a href="">Appcode Advantage</a></li>
+            <li><a href="">Apply</a></li>
+          </ul>
+      </div>
+      </div>
+    </li> -->
+    <li><a href="">Academics</a>
+      <div class="drop-container">
+        <div class="dropdowne">
+          <ul>
+            <li><a href="learn.html">Learning Goals</a></li>
+          </ul>
+      </div>
+      </div>
+    </li>
+    <li><a href="">Programs</a>
+      <div class="drop-container">
+        <div class="dropdowne">
+          <ul>
+            <li><a href="down.html">Download Brochure</a></li>
+            <li><a href="cyber.html">Cyber Security</a></li>
+            <li><a href="sof.html">Software Engineering</a></li>
+            <li><a href="cloud.html">Cloud Engineering</a></li>
+            <li><a href="data.html">Data Analytics</a></li>
+            <li><a href="digi.html">Digital Marketing</a></li>
+            <!-- <li><a href="rob.html">Robotics</a></li> -->
+          </ul>
+      </div>
+      </div>
+    </li>
+    <li><a href="gallery.html">Gallery </a></li>
+    <li><a href="news.html">News </a></li>
+    <li><a href="contact.html">Contact us</a></li>
+  </ul>
+
+  <div class="enroll">
+    <button><a href="https://paystack.com/pay/89dhzvywd7">Apply Now</a></button>
+  </div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="bnav">
+<div class="container-fluid">
+  <a class="navbar-brand" href="#"><img src="pics/appcode.png" width="250" alt=""></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarScroll">
+    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px;">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page"  href="https://paystack.com/pay/89dhzvywd7">Apply Now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About us</a>
+      </li>
+     
+   
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Academics
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="learn.html">Learning Goals</a></li>
+        </ul>
+      </li> 
+
+          
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Programs
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="down.html">Download brochure</a></li>
+          <li><a class="dropdown-item" href="sof.html">Software Engineering</a></li>
+          <li><a class="dropdown-item" href="cloud.html">Cloud Engineering</a></li>
+          <li><a class="dropdown-item" href="cyber.html">Cyber Security</a></li>
+          <li><a class="dropdown-item" href="data.html">Data Analytics</a></li>
+          <li><a class="dropdown-item" href="digi.html">Digital Marketing</a></li>
+          <li><a class="dropdown-item" href="https://paystack.com/pay/fplw8fq1r2">Apply now</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="gallery.html" aria-disabled="true">Gallery</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="news.html" aria-disabled="true">News</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="contact.html" aria-disabled="true">Contact us</a>
+      </li>
+
+     
+    </ul>
+
+  </div>
+</div>
+</nav>
+
+ <div class="ruth">
+  <!-- <img src="pics/ruth3.jpg" width="100%" alt=""> -->
+ </div>
+
+ <div class="heading">
+    <h1>Undergraduate Fees</h1>
+    <p>AppCode's academic year consist of two semesters running respectively from late August to December, and January to May. The fees listed below are per each semester, and also cover textbooks, internet services, other learning material and activity, and support services such as career services, health services, and counselling. For first-year and senior-year classes, fees also support limited funding for student business ideas.        
+    </p>
+
+    <div class="tuition">
+      <h1>
+        Tuition And Other Fees
+      </h1>
+      
+    </div>
+    <table  id="tablo">
+      <tr id="row">
+        <td>Fees</td>
+        <td>Amount in Ghana Cedis</td>
+        <td>Amount in US$</td>
+      </tr>
+
+      <tr id="row">
+        <td>Tuition for 1st semester</td>
+        <td>5,800.00</td>
+        <td>$ 485.24</td>
+      </tr>
+
+      <tr id="row">
+        <td>Tuition for 2nd semester</td>
+        <td>5,300.00</td>
+        <td>$ 443.41</td>
+      </tr>
+
+      <tr id="row">
+        <td>Tuition for 3rd semester</td>
+        <td>5,300.00</td>
+        <td>$ 443.41</td>
+      </tr>
+
+    </table>
+    <div class="pay">
+      <p class="first-semester">Mode of payment</p>
+      <button><a href="https://paystack.com/pay/mfnm7sqsk1">First installment Ghc 2,000  Pay</a></button>
+      <button><a href="https://paystack.com/pay/ue-vftvmsa"> Second installment Ghc 1,900 Pay</a></button>
+      <button><a href="https://paystack.com/pay/ue-vftvmsa"> Third installment Ghc 1,900 Pay</a></button>
+    </div>
+
+    <!-- second semester -->
+
+    <div class="pay">
+      <p class="second-semester">Second & Third Semester Fees</p>
+      <button><a href="https://paystack.com/pay/mfnm7sqsk1"> First installment Ghc 2,000 Pay</a></button>
+      <button> <a href="https://paystack.com/pay/jmh--7kpot"> Second installment Ghc 1,650 Pay</a></button>
+      <button> <a href="https://paystack.com/pay/jmh--7kpot">Third installment Ghc 1,650 Pay</a></button>
+    </div>
+
+    <div class="pay">
+      <p>Exclusive Payment Option</p>
+      <button><a href="https://paystack.com/pay/zo3jo3-xob"> Ghc 1,000 Pay</a></button>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="stage5">
+    <div class="stage5-content">
+    <div class="stage5con">
+     <ul>
+      <h1>Academy</h1>
+      <li><a href="about.html">Appcode mission</a></li>
+      <li><a href="about.html">Our Vision and Aspirations</a></li>
+      <li><a href="about.html">Our Values</a></li>
+
+    </ul>
+
+      <ul>
+        <h1>Courses</h1>
+        <li><a href="sof.html">Software Engineering</a></li>
+        <li><a href="cyber.html">Cyber Security</a></li>
+        <li><a href="data.html">Data Analytics</a></li>
+        <li><a href="cloud.html">Cloud Engineering</a></li>
+        <li><a href="digi.html">Digital Marketing</a></li>
+      </ul>
+
+      <ul>
+        <h1>New Here</h1>
+        <li><a href="about.html">Find out more</a></li>
+        <li><a href="learn.html">Student Learing Goals</a></li>
+        <li><a href="cloud.html">Main Courses/Programs</a></li>
+        <li><a href="news.html">Blog/News</a></li>
+
+      </ul>
+
+      <ul class="social">
+        <h1>Find Out More</h1>
+        <input type="text">
+        <button>signup</button>
+
+        <ul>
+          <li><a href=""><img src="pics/twitter.png" alt=""></a></li>
+        <li><a href=""><img src="pics/instagram.png" alt=""></a></li>
+        <li><a href=""><img src="pics/linked.png" alt=""></a></li>
+        <li><a href=""><img src="pics/face.png" alt=""></a></li>
+        <li><a href=""><img src="pics/youtube.png" alt=""></a></li>
+        </ul>
+        
+      </ul>
+
+
+
+      <ul class="street">
+        <h1>Street Address</h1>
+        <li>Gbawe-Accra.</li>
+        <li>No 2 first atoom Kojo str</li>
+      </ul>
+
+      <ul class="street">
+        <h1>Postal Address</h1>
+        <li>P.O. BOX 5100</li>
+        <li>Accra-North.</li>
+      </ul>
+
+      <ul class="street">
+        <h1>Phone & Email</h1>
+        <li> +233 598044825</li>
+        <li>info@appcodeglobal.org</a></li>
+      </ul>
+
+      <ul class="social">
+        <h1>Comming Soon</h1>
+        <li>+Appcode Foundation</li>
+        <li>+Dynamic ERP System</li>
+        <li>+Payment Gateway</li>
+      </div>
+
+    </ul>
+    <img src="pics/appcode.png" width="300" style="padding: 30px;" alt="">
+    <div style="border-top:1px solid rgb(67, 67, 67);" >
+      <p style="text-align: center;padding: 20px;">Copyright ©2024 All rights reserved</p>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/work.js"></script>
+<script>
+  function myFunction() {
+  let x = document.getElementById("hide");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+  <script src="js/main.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzUBNk0K4g-J66nUp-T-Zd-J5rjOno6CmXysHOc2IwLXAOE2H-dSuG7GUVJOWmMsgdO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="thank you for subscribing!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
