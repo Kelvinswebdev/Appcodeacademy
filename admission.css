@@ -313,6 +313,19 @@ td{
   color: white ;
 }
 
+.momo{
+  text-align: center;
+
+}
+
+.momo div img{
+  width: 200px;
+}
+
+.momo div{
+  display: flex;
+  justify-content: center;
+}
 
 
 
