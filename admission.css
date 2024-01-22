@@ -243,9 +243,11 @@
   
   
   /* the styling for the main content begins here */
+
+
 .ruth{
   height: 700px;
-  background-image: url("pics/ruth.jpg");
+  background-image: url("pics/IMG_0418.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -254,6 +256,12 @@
   margin: 0px auto;
   padding: 100px 0px;
   line-height: 1.6;
+}
+
+@media (max-width:992px){
+  .heading{
+    padding: 20px;
+  }
 }
 .heading h1{
     font-weight: lighter;
@@ -303,14 +311,29 @@ td{
   background-color: orangered;
   color: white;
   border-radius: 3px;
-  padding: 10px 20px;
 
 }
 
-.pay button a{
-  
+@media (max-width:800px){
+  .pay button{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .pay button a:hover{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px;
+
+  }
+}
+
+.pay button a{ 
   text-decoration: none;
   color: white ;
+  padding: 10px 20px;
+  display: block;
+
 }
 
 .momo{
@@ -326,6 +349,7 @@ td{
   display: flex;
   justify-content: center;
 }
+
 
 
 
