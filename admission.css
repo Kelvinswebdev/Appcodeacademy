@@ -251,6 +251,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media(max-width:800px){
+  .ruth{
+    background-size:contain;
+    height:330px;
+  }
+}
 .heading{
   max-width: 1000px;
   margin: 0px auto;
