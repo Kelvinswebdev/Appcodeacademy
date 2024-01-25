@@ -276,6 +276,12 @@
     font-size: 50px;
 }
 
+h4{
+    font-weight: lighter;
+    color: gray;
+    padding-bottom:20px;
+}
+
 .tuition{
   padding-top: 30px;
 }
