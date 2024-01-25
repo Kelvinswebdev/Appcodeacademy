@@ -296,6 +296,12 @@ h4{
   font-size: 20px;
 }
 
+@meida (max-width:800px){
+    #tablo{
+        font-size:13px;
+    }
+}
+
  #row{
   gap: 50px;
   border-bottom: 1px solid rgb(209, 209, 209);
