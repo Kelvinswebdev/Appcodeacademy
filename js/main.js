@@ -20,7 +20,7 @@ function closeModal() {
 
 // Open the modal when the page loads
 window.onload = function() {
-    setTimeout(openModal, 2000);
+    setTimeout(openModal, 1000);
 };
 
 function validate() {
@@ -66,7 +66,7 @@ function hasUserSubmitted() {
 // Check local storage on page load and decide whether to show the modal
 window.onload = function () {
     if (!hasUserSubmitted()) {
-        setTimeout(openModal, 2000);
+        setTimeout(openModal, 1000);
     }
 };
 
