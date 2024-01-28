@@ -764,6 +764,47 @@ display: none;
 }
 
 
+
+
+
+  
+.youtube{
+  display: flex;
+}
+
+.youtube h1{
+  font-size: 25px;
+  font-weight: lighter;
+  color: orangered;
+}
+
+@media(max-width:992px){
+  .youtube{
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media(max-width:992px){
+  iframe{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .stage5{
     background-color: #111111;
     /* font-weight: lighter; */
