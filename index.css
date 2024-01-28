@@ -772,12 +772,14 @@ display: none;
   display: flex;
   margin-top:100px;
   align-items:center:
+  gap: 50px;
 }
 
 .youtube h1{
   font-size: 25px;
   font-weight: lighter;
   color: orangered;
+  text-align:left;
 }
 
 @media(max-width:992px){
