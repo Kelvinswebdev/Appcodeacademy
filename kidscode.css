@@ -387,6 +387,8 @@
 @media(max-width:800px){
     .kofi{
           background-size: contain;
+            height:400px;
+        background-repeat:no-repeat;
         }
     }
     
