@@ -70,5 +70,5 @@ window.onload = function () {
     }
 };
 
-localStorage.removeItem('userInput');
-localStorage.removeItem('userSubmitted');
+// localStorage.removeItem('userInput');
+// localStorage.removeItem('userSubmitted');
