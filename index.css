@@ -771,8 +771,8 @@ display: none;
 .youtube{
   display: flex;
   margin-top:100px;
-  align-items:center:
-  gap: 50px;
+  align-items:center;
+  gap:50px;
 }
 
 .youtube h1{
